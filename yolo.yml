@@ -40,7 +40,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: shirlyne/yolobackend:1.0.0
+          image: europe-west1-docker.pkg.dev/my-first-project-382618/yolo1/shirlyne/yolobackend:1.0.0
           envFrom:
             - configMapRef:
                 name: backend-config
@@ -64,7 +64,7 @@ spec:
     spec:
       containers:
         - name: client
-          image: shirlyne/yoloclient:1.0.0
+          image: europe-west1-docker.pkg.dev/my-first-project-382618/yolo1/shirlyne/yoloclient:1.0.0
           envFrom:
             - configMapRef:
                 name: client-config
