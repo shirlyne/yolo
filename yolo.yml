@@ -41,9 +41,9 @@ spec:
       containers:
         - name: backend
           image: europe-west1-docker.pkg.dev/my-first-project-382618/yolo1/shirlyne/yolobackend:1.0.0
-          envFrom:
-            - configMapRef:
-                name: backend-config
+          #envFrom:
+           # - configMapRef:
+            #    name: backend-config
           ports:
             - name: http
               containerPort: 5000
@@ -65,9 +65,9 @@ spec:
       containers:
         - name: client
           image: europe-west1-docker.pkg.dev/my-first-project-382618/yolo1/shirlyne/yoloclient:1.0.0
-          envFrom:
-            - configMapRef:
-                name: client-config
+          #envFrom:
+           # - configMapRef:
+            #    name: client-config
           ports:
             - name: http
               containerPort: 3000
