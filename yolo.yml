@@ -4,7 +4,7 @@ metadata:
   name: backend
 spec:
   selector:
-    app: backend
+    app: yolo
   ports:
     - name: http
       port: 5000
@@ -17,7 +17,7 @@ metadata:
   name: client
 spec:
   selector:
-    app: client
+    app: yolo
   ports:
     - name: http
       port: 3000
